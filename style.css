@@ -171,3 +171,40 @@ header {
   margin-top: 1.6rem;
   margin-left: auto;
 }
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1050px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card-supervisor {
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  .card-calculator {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  .header-description {
+    padding: 0 15rem;
+  }
+}
